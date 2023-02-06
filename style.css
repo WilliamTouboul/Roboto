@@ -6,6 +6,70 @@
     box-sizing: border-box;
 }
 
-canvas{
+body {
+    min-height: 200vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+canvas {
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    z-index: 99;
+    font-size: 72px;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    z-index: 99;
+    font-size: 36px;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+
+
+.hero h2 span {
+    color: rgb(64, 224, 59);
+}
+
+section {
+    margin-top: 120vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    min-height: 40vh;
+}
+
+.left {
+    color: white;
+    width: 40%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    width: 40%;
+
+    background-image: url('models/109.jpg');
+    background-size: cover;
 }
